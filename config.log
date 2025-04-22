@@ -1,0 +1,836 @@
+
+
+[1mBeginning JFrog Artifactory setup[0m
+
+[DEBUG] Method docker_doValidations Caller:5467 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+Validating System requirements
+
+[38;5;197m[ERROR[0m[38;5;197m] [0mThis script must be run as root or with sudo
+
+[1mBeginning JFrog Artifactory setup[0m
+
+
+[DEBUG] Method docker_doValidations Caller:5467 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+Validating System requirements
+Docker version 28.1.1, build 4eba377
+Docker Compose version v2.35.1
+
+[1;31m[WARN[0m[1;31m] [0mRunning with 1GB Total RAM. Recommended value: 4GB
+
+[1;31m[WARN[0m[1;31m] [0mRunning with 1 CPU Cores. Recommended value: 2 Cores
+
+[DEBUG] All validations successful
+
+[DEBUG] Method docker_hook_preUserInputs
+
+[DEBUG] Method docker_getUserInputs Caller:5477 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_getUserInputs Caller:5371 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_createInstallerYaml Caller:4013 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Creating file: [/home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml]
+
+[DEBUG] Method wrapper_setSystemValue Caller:2892 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting installer.ha with n in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Method wrapper_hook_setInstallerDefaults Caller:2898 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:5297 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting installer.data_dir with /root/.jfrog/artifactory in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Method docker_hook_setInstallerDefaults
+
+[DEBUG] Method wrapper_setSystemValue Caller:2900 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting installer.node.ip with 192.168.23.152 in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Method wrapper_setSystemValue Caller:2903 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting installer.install_postgresql with y in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Method wrapper_hook_start_getUserInputs Caller:4016 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:5307 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+Installation Directory (Default: /root/.jfrog/artifactory): 
+[DEBUG] Setting installer.data_dir with /root/.jfrog/artifactory in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Method docker_getSystemValue Caller:5309 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.data_dir]
+
+[DEBUG] Method: wrapper_hook_start_getUserInputs. JF_ROOT_DATA_DIR is now [/root/.jfrog/artifactory]
+
+[DEBUG] Validating system.yaml
+
+[DEBUG] Skipping system.yaml validation since system.yaml file [/root/.jfrog/artifactory/var/etc/system.yaml] was not found
+
+Running system diagnostics checks, logs can be found at [/home/minotaur423/artifactory/artifactory-jcr-7.104.15/systemDiagnostics.log]
+[ERROR] Ulimit level for open files is less than the recommended minimum 32000
+
+[1;31m[WARN[0m[1;31m] [0mOne or more system diagnostic checks have failed, check [/home/minotaur423/artifactory/artifactory-jcr-7.104.15/systemDiagnostics.log] for additional details
+
+[DEBUG] Method docker_triggerMigration Caller:5341 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+Triggering migration script. This will migrate if needed and may take some time.
+
+Migration logs will be available at [/home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/migration.log]. The file will be archived at [/root/.jfrog/artifactory/var/log] after installation
+
+[DEBUG] Method docker_postMigration_hook
+
+[DEBUG] Method _askForMandatoryInputs Caller:4018 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _getHostIpIfAvailable Caller:4023 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:4027 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+For IPv6 address, enclose value within square brackets as follows : [<ipv6_address>]
+Please specify the IP address of this machine (Default: 192.168.23.152): 
+[DEBUG] Setting installer.node.ip with 192.168.23.152 in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Method _updateFromSystemYaml Caller:4038 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _getHAModeIfAvailable Caller:4040 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:4041 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+Are you adding an additional node to an existing product cluster? [y/N]: 
+[DEBUG] Setting installer.ha with n in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Method wrapper_standalone_hook_getUserInputs (unimplemented)
+
+[DEBUG] Method _askForDBInputs Caller:4070 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _getDatabaseType Caller:3925 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _askPostgresDetails Caller:3928 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:3573 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+The installer can install a PostgreSQL database, or you can connect to an existing compatible PostgreSQL database
+(https://jfrog.com/help/r/jfrog-installation-setup-documentation/requirements-matrix)
+If you are upgrading from an existing installation, select N if you have externalized PostgreSQL, select Y if not.
+Do you want to install PostgreSQL? [Y/n]: 
+[DEBUG] Setting installer.install_postgresql with y in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Setting shared.database.type with postgresql in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Setting shared.database.driver with org.postgresql.Driver in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Method _updateFromSystemYaml Caller:3011 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:3013 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+To setup PostgreSQL, please enter a password
+database password: 
+
+[DEBUG] The input failed validations [^[a-zA-Z0-9]+$]
+
+[1;31m[WARN[0m[1;31m] [0mPlease enter valid PostgreSQL password
+database password: 
+
+[DEBUG] The input failed validations [^[a-zA-Z0-9]+$]
+
+[1;31m[WARN[0m[1;31m] [0mPlease enter valid PostgreSQL password
+database password: 
+
+[DEBUG] The input failed validations [^[a-zA-Z0-9]+$]
+
+[1;31m[WARN[0m[1;31m] [0mPlease enter valid PostgreSQL password
+database password: 
+
+
+[DEBUG] Setting shared.database.password with __sensitive_key_hidden___ in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+confirm database password: 
+
+[DEBUG] Method wrapper_setSystemValue Caller:3005 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting shared.database.password with __sensitive_key_hidden___ in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Method wrapper_hook_askExtraPostgresDetails (unimplemented)
+
+[DEBUG] Method wrapper_hook_getUserInputs (unimplemented)
+
+[DEBUG] Method wrapper_hook_setRedisPassword (unimplemented)
+
+[DEBUG] Method docker_getSystemValue Caller:5375 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.data_dir]
+
+[DEBUG] Method: docker_getUserInputs. JF_ROOT_DATA_DIR is now [/root/.jfrog/artifactory]
+
+[DEBUG] Method docker_getSystemValue Caller:5382 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.ha]
+
+[DEBUG] Method: docker_getUserInputs. JF_NODE_TYPE is now [standalone]
+
+[DEBUG] Method docker_getSystemValue Caller:5392 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.jfrogUrl]
+
+[DEBUG] Method: docker_getUserInputs. JF_SHARED_JFROGURL is now []
+
+[DEBUG] Method docker_getSystemValue Caller:5396 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[pdnNode.pdnServerUrl]
+
+[DEBUG] Method: docker_getUserInputs. JF_PDNNODE_PDNSERVERURL is now []
+
+[DEBUG] Method docker_getSystemValue Caller:5400 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.security.joinKey]
+
+[DEBUG] Method: docker_getUserInputs. JF_SHARED_SECURITY_JOINKEY is now []
+
+[DEBUG] Method docker_getSystemValue Caller:5404 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.install_postgresql]
+
+[DEBUG] Method: docker_getUserInputs. IS_POSTGRES_REQUIRED is now [y]
+
+[DEBUG] Method docker_getSystemValue Caller:5408 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.node.ip]
+
+[DEBUG] Method: docker_getUserInputs. JF_SHARED_NODE_IP is now [192.168.23.152]
+
+[DEBUG] Method docker_hook_getUserInputs_post
+
+[DEBUG] No third party integration configured. Skipping invocation of 3rd party hook
+
+[DEBUG] Method docker_updateFromYaml Caller:5482 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4417 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.install_elasticsearch]
+
+[DEBUG] Method docker_setupModeSpecificVar. IS_ELASTICSEARCH_REQUIRED is now []
+
+[DEBUG] PROJECT_ROOT_FOLDER is [artifactory]
+
+[DEBUG] Method docker_setDirInfo Caller:5489 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Root Directory being used is: /root/.jfrog/artifactory
+
+[DEBUG] Method docker_hook_setDirInfo
+
+[DEBUG] Method docker_createDirectories Caller:5493 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] First setup. Setting FIRST_SETUP=true
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/etc]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/etc
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/etc]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/data]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/data
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/data]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/log]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/log
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/log]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/etc/security]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/etc/security
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/etc/security]
+
+[DEBUG] Method docker_hook_createDirectories
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/bootstrap]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/bootstrap
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/bootstrap]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/bootstrap/artifactory]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/bootstrap/artifactory
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/bootstrap/artifactory]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/bootstrap/artifactory/tomcat]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/bootstrap/artifactory/tomcat
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/bootstrap/artifactory/tomcat]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/bootstrap/artifactory/tomcat/lib]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/bootstrap/artifactory/tomcat/lib
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/bootstrap/artifactory/tomcat/lib]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/bootstrap]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/bootstrap
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/bootstrap]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/bootstrap/access]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/bootstrap/access
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/bootstrap/access]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/bootstrap/access/etc]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/bootstrap/access/etc
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/bootstrap/access/etc]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/bootstrap/access/etc/security]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/bootstrap/access/etc/security
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/bootstrap/access/etc/security]
+
+[DEBUG] Value of [FIRST_SETUP] is [true]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory]
+
+[DEBUG] Method docker_setRootDirPermissions Caller:5497 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory]
+
+[DEBUG] Method docker_createThirdPartyDir Caller:5501 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+Creating third party directories (if necessary)
+
+[DEBUG] Method io_createPostgresDir Caller:4698 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Property [/root/.jfrog/artifactory/var/data/postgres] exists. Proceeding
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/data/postgres/data]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/data/postgres/data
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 999:999 /root/.jfrog/artifactory/var/data/postgres]
+
+[DEBUG] Method io_createNginxDir Caller:4699 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Property [/root/.jfrog/artifactory/var/data/nginx] exists. Proceeding
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/data/nginx]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/data/nginx
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 104:107 /root/.jfrog/artifactory/var/data/nginx]
+
+[DEBUG] Method io_createElasticSearchDir Caller:4700 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method io_createRedisDir Caller:4701 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method io_createMongoDir Caller:4702 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method io_createRabbitMQDir Caller:4703 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _updateFromSystemYaml Caller:3608 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _getDatabaseType Caller:3613 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:3630 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting installer.postgresql_version with 15-6v in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml
+
+[DEBUG] Method docker_createSystemYaml Caller:5507 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.node.ip] to [/root/.jfrog/artifactory/var/etc/system.yaml]
+
+[DEBUG] Setting shared.node.ip with 192.168.23.152 in /root/.jfrog/artifactory/var/etc/system.yaml
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.node.id] to [/root/.jfrog/artifactory/var/etc/system.yaml]
+
+[DEBUG] Setting shared.node.id with artifactory in /root/.jfrog/artifactory/var/etc/system.yaml
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.node.name] to [/root/.jfrog/artifactory/var/etc/system.yaml]
+
+[DEBUG] Setting shared.node.name with artifactory in /root/.jfrog/artifactory/var/etc/system.yaml
+
+[DEBUG] Method docker_setSystemValue. Setting [router.entrypoints.externalPort] to [/root/.jfrog/artifactory/var/etc/system.yaml]
+
+[DEBUG] Setting router.entrypoints.externalPort with 8082 in /root/.jfrog/artifactory/var/etc/system.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4895 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.type]
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.database.type] to [/root/.jfrog/artifactory/var/etc/system.yaml]
+
+[DEBUG] Setting shared.database.type with postgresql in /root/.jfrog/artifactory/var/etc/system.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4896 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.driver]
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.database.driver] to [/root/.jfrog/artifactory/var/etc/system.yaml]
+
+[DEBUG] Setting shared.database.driver with org.postgresql.Driver in /root/.jfrog/artifactory/var/etc/system.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4897 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.url]
+
+[DEBUG] Key: KEY_DATABASE_URL not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4898 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.username]
+
+[DEBUG] Key: KEY_DATABASE_USERNAME not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4899 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.password]
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.database.password] to [/root/.jfrog/artifactory/var/etc/system.yaml]
+
+[DEBUG] Setting shared.database.password with __sensitive_key_hidden___ in /root/.jfrog/artifactory/var/etc/system.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4900 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.elasticsearch.username]
+
+[DEBUG] Key: KEY_ELASTICSEARCH_PASSWORD not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4901 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.elasticsearch.password]
+
+[DEBUG] Key: KEY_ELASTICSEARCH_PASSWORD not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4902 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.rabbitMq.active.node.name]
+
+[DEBUG] Key: KEY_RABBITMQ_ACTIVE_NODE_NAME not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4903 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.rabbitMq.active.node.ip]
+
+[DEBUG] Key: KEY_RABBITMQ_ACTIVE_NODE_IP not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4904 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.redis.password]
+
+[DEBUG] Key: KEY_REDIS_PASSWORD not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4905 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.rabbitMq.password]
+
+[DEBUG] Key: KEY_RABBITMQ_PASSWORD not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4906 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[pdnNode.pdnServerUrl]
+
+[DEBUG] Key: KEY_PDNNODE_PDNSERVERURL not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4907 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[pdnNode.joinKey]
+
+[DEBUG] Key: KEY_PDNNODE_JOINKEY not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4908 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[pdnNode.selfGrpcAddress]
+
+[DEBUG] Key: KEY_PDNNODE_SELFGRPCADDRESS not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4909 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[pdnNode.selfHttpAddress]
+
+[DEBUG] Key: KEY_PDNNODE_SELFHTTPADDRESS not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4910 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[pdnNode.port]
+
+[DEBUG] Key: KEY_PDNNODE_PORT not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4911 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[pdnNode.httpPort]
+
+[DEBUG] Key: KEY_PDNNODE_HTTPPORT not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4912 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[pdnNode.httpBouncerPort]
+
+[DEBUG] Key: KEY_PDNNODE_HTTPBOUNCERPORT not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4913 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[pdnServer.selfAddress]
+
+[DEBUG] Key: KEY_PDNSERVER_SELFADDRESS not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4914 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[router.entrypoints.externalPort]
+
+[DEBUG] Key: KEY_ROUTER_ENTRYPOINTS_EXTERNALPORT not applicable
+
+[DEBUG] Method docker_getSystemValue Caller:4916 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.security.masterKey]
+
+[DEBUG] Method docker_addToEnvFile Caller:4924 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Replacing [ROOT_DATA_DIR] in /home/minotaur423/artifactory/artifactory-jcr-7.104.15/.env
+
+[DEBUG] Replaced [ROOT_DATA_DIR=.*] with [ROOT_DATA_DIR=/root/.jfrog/artifactory] in [/home/minotaur423/artifactory/artifactory-jcr-7.104.15/.env]
+
+[DEBUG] Method docker_hook_postSystemYamlCreation
+
+[DEBUG] Method _getDatabaseType Caller:36 ./config.sh
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.database.username] to [/root/.jfrog/artifactory/var/etc/system.yaml]
+
+[DEBUG] Setting shared.database.username with artifactory in /root/.jfrog/artifactory/var/etc/system.yaml
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.database.url] to [/root/.jfrog/artifactory/var/etc/system.yaml]
+
+[DEBUG] Setting shared.database.url with __sensitive_key_hidden___ in /root/.jfrog/artifactory/var/etc/system.yaml
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/etc/system.yaml]
+
+[DEBUG] Method docker_installToSystemYaml Caller:4937 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.ha]
+
+[DEBUG] Method docker_setSystemValue. Setting [installer.ha] to [/root/.jfrog/artifactory/var/etc/installerState.yaml]
+
+[DEBUG] Setting installer.ha with n in /root/.jfrog/artifactory/var/etc/installerState.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4937 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.install_postgresql]
+
+[DEBUG] Method docker_setSystemValue. Setting [installer.install_postgresql] to [/root/.jfrog/artifactory/var/etc/installerState.yaml]
+
+[DEBUG] Setting installer.install_postgresql with y in /root/.jfrog/artifactory/var/etc/installerState.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4937 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4838 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.postgresql_version]
+
+[DEBUG] Method docker_setSystemValue. Setting [installer.postgresql_version] to [/root/.jfrog/artifactory/var/etc/installerState.yaml]
+
+[DEBUG] Setting installer.postgresql_version with 15-6v in /root/.jfrog/artifactory/var/etc/installerState.yaml
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/etc/installerState.yaml]
+
+[DEBUG] Method docker_hook_copyComposeFile
+
+[DEBUG] Method docker_getSystemValue Caller:4950 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.postgresql_version]
+
+[DEBUG] Method _getDatabaseType Caller:5019 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:5025 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.password]
+
+Attempting to seed PostgreSQL. This may take some time.
+time="2025-04-19T19:02:29-04:00" level=warning msg="/home/minotaur423/artifactory/artifactory-jcr-7.104.15/docker-compose-postgres.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ postgres Pulling 
+ 4abcf2066143 Pulling fs layer 
+ e54d40fa3899 Pulling fs layer 
+ 63bba88902c4 Pulling fs layer 
+ 908252890a7b Pulling fs layer 
+ 28c626fde205 Pulling fs layer 
+ c8eb99bde370 Pulling fs layer 
+ 52b7eaf1cdf2 Pulling fs layer 
+ 1a9195d5564e Pulling fs layer 
+ b83e77e7f801 Pulling fs layer 
+ 908252890a7b Waiting 
+ 28c626fde205 Waiting 
+ c8eb99bde370 Waiting 
+ 52b7eaf1cdf2 Waiting 
+ 1a9195d5564e Waiting 
+ b83e77e7f801 Waiting 
+ 63bba88902c4 Downloading [==================================================>]     116B/116B
+ 63bba88902c4 Verifying Checksum 
+ 63bba88902c4 Download complete 
+ e54d40fa3899 Downloading [==========>                                        ]     254B/1.264kB
+ e54d40fa3899 Downloading [==================================================>]  1.264kB/1.264kB
+ e54d40fa3899 Verifying Checksum 
+ e54d40fa3899 Download complete 
+ 28c626fde205 Downloading [=>                                                 ]     254B/9.448kB
+ 28c626fde205 Downloading [==================================================>]  9.448kB/9.448kB
+ 28c626fde205 Verifying Checksum 
+ 28c626fde205 Download complete 
+ c8eb99bde370 Downloading [==================================================>]     128B/128B
+ c8eb99bde370 Verifying Checksum 
+ c8eb99bde370 Download complete 
+ 52b7eaf1cdf2 Downloading [==================================================>]     172B/172B
+ 52b7eaf1cdf2 Verifying Checksum 
+ 52b7eaf1cdf2 Download complete 
+ 4abcf2066143 Downloading [>                                                  ]  49.56kB/3.409MB
+ 1a9195d5564e Downloading [==>                                                ]     254B/5.417kB
+ 1a9195d5564e Downloading [==================================================>]  5.417kB/5.417kB
+ 1a9195d5564e Verifying Checksum 
+ 1a9195d5564e Download complete 
+ b83e77e7f801 Downloading [==================================================>]     185B/185B
+ b83e77e7f801 Verifying Checksum 
+ b83e77e7f801 Download complete 
+ 908252890a7b Downloading [>                                                  ]  539.7kB/91.4MB
+ 4abcf2066143 Downloading [==================================>                ]  2.318MB/3.409MB
+ 4abcf2066143 Verifying Checksum 
+ 4abcf2066143 Download complete 
+ 4abcf2066143 Extracting [>                                                  ]  65.54kB/3.409MB
+ 908252890a7b Downloading [====>                                              ]  7.984MB/91.4MB
+ 4abcf2066143 Extracting [================>                                  ]  1.114MB/3.409MB
+ 4abcf2066143 Extracting [==================================================>]  3.409MB/3.409MB
+ 908252890a7b Downloading [=========>                                         ]  18.04MB/91.4MB
+ 4abcf2066143 Pull complete 
+ e54d40fa3899 Extracting [==================================================>]  1.264kB/1.264kB
+ e54d40fa3899 Extracting [==================================================>]  1.264kB/1.264kB
+ 908252890a7b Downloading [================>                                  ]  29.25MB/91.4MB
+ e54d40fa3899 Pull complete 
+ 63bba88902c4 Extracting [==================================================>]     116B/116B
+ 63bba88902c4 Extracting [==================================================>]     116B/116B
+ 908252890a7b Downloading [======================>                            ]  40.44MB/91.4MB
+ 63bba88902c4 Pull complete 
+ 908252890a7b Downloading [============================>                      ]  52.19MB/91.4MB
+ 908252890a7b Downloading [==================================>                ]  62.87MB/91.4MB
+ 908252890a7b Downloading [========================================>          ]  74.08MB/91.4MB
+ 908252890a7b Downloading [==============================================>    ]  84.72MB/91.4MB
+ 908252890a7b Verifying Checksum 
+ 908252890a7b Download complete 
+ 908252890a7b Extracting [>                                                  ]  557.1kB/91.4MB
+ 908252890a7b Extracting [===>                                               ]  5.571MB/91.4MB
+ 908252890a7b Extracting [======>                                            ]   11.7MB/91.4MB
+ 908252890a7b Extracting [=========>                                         ]  17.83MB/91.4MB
+ 908252890a7b Extracting [============>                                      ]   23.4MB/91.4MB
+ 908252890a7b Extracting [===============>                                   ]  28.41MB/91.4MB
+ 908252890a7b Extracting [==================>                                ]  34.54MB/91.4MB
+ 908252890a7b Extracting [====================>                              ]  37.88MB/91.4MB
+ 908252890a7b Extracting [======================>                            ]  40.67MB/91.4MB
+ 908252890a7b Extracting [========================>                          ]  45.12MB/91.4MB
+ 908252890a7b Extracting [===========================>                       ]  49.58MB/91.4MB
+ 908252890a7b Extracting [=============================>                     ]  54.59MB/91.4MB
+ 908252890a7b Extracting [================================>                  ]   59.6MB/91.4MB
+ 908252890a7b Extracting [=================================>                 ]  60.72MB/91.4MB
+ 908252890a7b Extracting [===================================>               ]  65.18MB/91.4MB
+ 908252890a7b Extracting [======================================>            ]  70.19MB/91.4MB
+ 908252890a7b Extracting [========================================>          ]  74.09MB/91.4MB
+ 908252890a7b Extracting [==========================================>        ]  78.54MB/91.4MB
+ 908252890a7b Extracting [==============================================>    ]  84.67MB/91.4MB
+ 908252890a7b Extracting [=================================================> ]  90.24MB/91.4MB
+ 908252890a7b Extracting [=================================================> ]  91.36MB/91.4MB
+ 908252890a7b Extracting [==================================================>]   91.4MB/91.4MB
+ 908252890a7b Pull complete 
+ 28c626fde205 Extracting [==================================================>]  9.448kB/9.448kB
+ 28c626fde205 Extracting [==================================================>]  9.448kB/9.448kB
+ 28c626fde205 Pull complete 
+ c8eb99bde370 Extracting [==================================================>]     128B/128B
+ c8eb99bde370 Extracting [==================================================>]     128B/128B
+ c8eb99bde370 Pull complete 
+ 52b7eaf1cdf2 Extracting [==================================================>]     172B/172B
+ 52b7eaf1cdf2 Extracting [==================================================>]     172B/172B
+ 52b7eaf1cdf2 Pull complete 
+ 1a9195d5564e Extracting [==================================================>]  5.417kB/5.417kB
+ 1a9195d5564e Extracting [==================================================>]  5.417kB/5.417kB
+ 1a9195d5564e Pull complete 
+ b83e77e7f801 Extracting [==================================================>]     185B/185B
+ b83e77e7f801 Extracting [==================================================>]     185B/185B
+ b83e77e7f801 Pull complete 
+ postgres Pulled 
+ Network rt-postgres_default  Creating
+ Network rt-postgres_default  Created
+ Container postgresql  Creating
+ Container postgresql  Created
+ Container postgresql  Starting
+ Container postgresql  Started
+
+Successfully seeded PostgreSQL
+
+[DEBUG] Copying [/home/minotaur423/artifactory/artifactory-jcr-7.104.15/templates/docker-compose.yaml] as [/home/minotaur423/artifactory/artifactory-jcr-7.104.15/docker-compose.yaml]
+
+[DEBUG] Method docker_hook_setupThirdParty
+
+[DEBUG] No third party integration configured. Skipping invocation of 3rd party hook
+
+[DEBUG] Method docker_configureLogRotation Caller:5522 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _addLogRotateBinary Caller:5284 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method configureLogRotation Caller:5285 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Configuring log rotation as user [1030], group [1030], effective cron User [root]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/log]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/log
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/log]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/log/archived]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/log/archived
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/log/archived]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/etc]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/etc
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/etc]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/etc/logrotate]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/etc/logrotate
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/etc/logrotate]
+
+[DEBUG] Method createFile [/root/.jfrog/artifactory/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method _addLogRotateConfiguration Caller:1246 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Adding logrotate configuration for [/root/.jfrog/artifactory/var/log/console.log] to [/root/.jfrog/artifactory/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method _addCronJobForLogrotate Caller:1247 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method removeLogRotation Caller:1169 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] No third party integration configured. Skipping invocation of 3rd party hook
+
+[DEBUG] Method docker_showSuccessMessage Caller:5528 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_hook_productSpecificComposeHelp
+
+[1mDocker setup complete[0m
+
+Installation directory: [/root/.jfrog/artifactory] contains data and configurations.
+
+Use docker-compose commands to start the application. Once the application has started, it can be accessed at [http://192.168.23.152:8082]
+
+[1mExamples:[0m
+cd /home/minotaur423/artifactory/artifactory-jcr-7.104.15
+
+
+start postgresql:    docker compose -p rt-postgres -f docker-compose-postgres.yaml up -d
+stop  postgresql:    docker compose -p rt-postgres -f docker-compose-postgres.yaml down
+start:               docker compose -p rt up -d
+stop:                docker compose -p rt down
+
+[1mNOTE:[0m The compose file uses several environment variables from the .env file. Remember to run from within the [/home/minotaur423/artifactory/artifactory-jcr-7.104.15] folder
+
+[DEBUG] Method docker_cleanup Caller:5532 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_removeInstallerYaml Caller:5098 /home/minotaur423/artifactory/artifactory-jcr-7.104.15/bin/dockerComposeHelper.sh
+
+[DEBUG] Removing file: [/home/minotaur423/artifactory/artifactory-jcr-7.104.15/installer.yaml]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/log/config.log]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/log/migration.log]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/etc/system.basic-template.yaml]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/etc/system.full-template.yaml]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/log/systemDiagnostics.log]
+
+[1mDone[0m
+
