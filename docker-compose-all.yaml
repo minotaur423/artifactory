@@ -1,4 +1,3 @@
-version: '3'
 services:
   artifactory:
     image: ${DOCKER_REGISTRY}/jfrog/artifactory-jcr:${ARTIFACTORY_VERSION}
@@ -30,6 +29,8 @@ services:
     network_mode: service:artifactory
     volumes:
       - ${ROOT_DATA_DIR}/var/data/nginx:/var/opt/jfrog/nginx
+      - ${ROOT_DATA_DIR}/var/data/nginx/ssl:/var/opt/jfrog/nginx/ssl
+      - ${ROOT_DATA_DIR}/var/data/nginx/conf.d:/var/opt/jfrog/nginx/conf.d
       - /etc/localtime:/etc/localtime:ro
     environment:
       - ART_BASE_URL=http://localhost:${JF_ROUTER_ENTRYPOINTS_EXTERNALPORT}
@@ -53,7 +54,7 @@ services:
     environment:
       - POSTGRES_DB=artifactory
       - POSTGRES_USER=artifactory
-      - POSTGRES_PASSWORD=__REPLACE_POSTGRES_PASSWORD__
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     ports:
       - 5432:5432
     volumes:
